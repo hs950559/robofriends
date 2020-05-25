@@ -9,6 +9,24 @@ npx creat-react-app robofriends
 npm start
 ```
 
+## Build & Deploy
+
+```
+npm i gh-pages -D
+
+// package.json
+"homepage": "http://hs950559.github.io/robofriends",
+
+"scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+},
+
+npm run deploy
+// Boom!
+Demo - https://hs950559.github.io/robofriends/
+```
+
 ## Available Scripts
 
 In the project directory, you can run:
